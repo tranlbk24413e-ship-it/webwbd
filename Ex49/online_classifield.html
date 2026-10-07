@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset = 'utf-8'>
+        <title>Online Classifieds Search Form</title>
+        <style>
+            body {
+                background-color:lightblue;
+            }
+            h1 {
+                color: red;
+            }
+        </style>
+        <script>
+            function doSearch() {
+                alert("Đang tìm kiếm classified theo tiêu chí bạn đã chọn...");
+                return false; // chặn submit thật vì chưa có server xử lý
+            }
+
+            function doHelp() {
+                window.open("help.html", "_blank");
+                return false; 
+            }
+
+            function doCancel() {
+                document.getElementById("searchForm").reset();
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Online Classifieds Search Form</h1>
+        <hr size = "1" color = "black"/>
+        <<form id="searchForm">>
+            <h2>1) Search for a classified in the following sections:</h2>
+            <table>
+                <tr>
+                    <td><input type = "radio">Employment</td>
+                    <td><input type = "radio">Personal</td>
+                </tr>
+                <tr>
+                    <td><input type = "radio" checked>For Sale</td>
+                    <td><input type = "radio">Miscellanecus</td>
+                </tr>
+                <tr>
+                    <td><input type = "radio">Housing</td>
+                    <td><input type = "radio">All of the above</td>
+                </tr>
+            </table>
+            <h2>2) Search the following puclications:</h2>
+            <table>
+                <tr>
+                    <td><input type = "checkbox" checked>Midwest times</td>
+                    <td><input type = "checkbox">Modem News</td>
+                    <td><input type = "checkbox">Employment Tody</td>
+                </tr>
+                <tr>
+                    <td><input type = "checkbox" checked>Great Lakes Classifieds</td>
+                    <td><input type = "checkbox">Middleton Daily</td>
+                    <td><input type = "checkbox">Cashtown Daily News</td>
+                </tr>
+            </table>
+            <h2>3) From to <input type = "date"> to <input type = "date"></h2>
+            <h2>4) Enter a few keywords to describe the classified.
+                <br/>
+                <textarea rows = "1" cols = "70"></textarea>
+            </h2>
+            <h2>5) Click one of the options below:</h2>
+                <input type="image" src="Search.jpg" alt="Search" onclick="return doSearch();">
+                <input type="image" src="Help.jpg" alt="Help" onclick="return doHelp();">
+                <input type="image" src="Cancel.jpg" alt="Cancel" onclick="return doCancel();">
+        </form>
+    </body>
+</html>
