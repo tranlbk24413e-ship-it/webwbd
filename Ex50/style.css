@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d8f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;             
+    justify-content: center;   
+}
+
+.container {
+    width: 750;             
+    max-width: 100%;         
+    border: none;            
+    padding: 20px;              
+}
+
+.header-banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #708090;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.inline-label {
+    margin-left: 10px;
+}
+
+.short-input {
+    width: 100px;
+}
+
+textarea {
+    margin-top: 5px;
+    width: 420px;
+    height: 90px;
+    padding: 5px;
+    border: 1px solid #7f9db9;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: separated;
+    border: 2px groove #dfdfdf; 
+    background-color: #ffffff;
+    margin-top: 8px;
+}
+
+.expense-table th, 
+.expense-table td {
+    border-top: 1px solid #d0d0d0;
+    border-left: 1px solid #d0d0d0;
+    border-bottom: 1px solid #808080; 
+    border-right: 1px solid #808080;  
+    padding: 4px 6px;
+    text-align: center;
+}
+
+.expense-table th {
+    background-color: #e6e6e6; 
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.expense-table input[type="date"],
+.expense-table input[type="text"],
+.expense-table select {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #7f9db9; 
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.expense-table .amount-input {
+    width: 70px !important;
+}
+
+.radio-label {
+    margin-right: 10px;
+}
+
+.form-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-actions input[type="submit"], 
+.form-actions input[type="reset"] {
+    padding: 3px 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer-note {
+    font-size: 13px;
+    margin-top: 10px;
+}
